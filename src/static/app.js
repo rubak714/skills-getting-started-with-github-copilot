@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         showMessage(result.message, "success");
         signupForm.reset();
+        fetchActivities();
       } else {
         showMessage(result.detail || "An error occurred", "error");
       }
